@@ -14,7 +14,9 @@ func main() {
 	fmt.Print("Введите возраст: ")
 	fmt.Fscan(os.Stdin, &age)
 
-	fmt.Println(name, age)
+	user1 := myuser{name, age}
+
+	fmt.Println("Name: " + user1.name)
 
 	fmt.Fscan(os.Stdin, &name)
 }
